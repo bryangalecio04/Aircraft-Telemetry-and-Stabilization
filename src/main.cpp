@@ -45,7 +45,7 @@ bool micActive = false;
 bool speakerState = false;
 
 // DMP Buffer Initialization
-uint8_t FIFOBuffer[64]; // Local buffer for DMP data
+uint8_t FIFOBuffer[64];
 
 // Strings used to structure the telemetry data that will be transmitted to a display
 String message = "Telemetry Data";
@@ -133,7 +133,7 @@ void setup() {
   delay(1000);
   lcd.clear();
 
-  // Hash Values for Access Control
+  // Hash values generated from Secure Hash Algorithm 256 (SHA-256) for storing RFID UIDs
   const std::map<String, String> hash_values = {
     {"DA48956B275C2B246DD1FAD7AD9ACE26777788841645E40C326453A02C3FE11F", "Kevin"},
     {"12968B977F38420482E20F5DC55D2A9B58E8F22193A5BA3F55221FC054150A04", "Nick"},
