@@ -1,7 +1,7 @@
 # Aircraft Telemetry and Stabilization
-In response to a project challenge emphasizing creativity and sensor integration by our professor, my peers, Kevin Galarraga and Nick Colaco, and I designed and developed a scaled-down cardboard plane prototype. The system collects and displays real-time flight and environmental data on an LCD dashboard and streams it to a live server over Wi-Fi. It integrates multiple sensors to measure distance, temperature, humidity, water level, sound events, and secure RFID access, providing a comprehensive telemetry system.
+In response to a project emphasizing creativity and sensor integration assigned to us by our professor, my peers, Kevin Galarraga and Nick Colaco, and I designed and implemented a scaled-down cardboard aircraft prototype. The system acquires and displays real-time flight and environmental telemetry on an LCD interface while simultaneously transmitting the data to a remote server over Wi-Fi. It incorporates multiple sensing modules for distance, temperature, humidity, liquid level, acoustic events, and secure RFID-based access control, forming a comprehensive sensor network for aircraft monitoring.
 
-The plane uses a 3-axis accelerometer and gyroscope module to measure orientation and calculate yaw, pitch, and roll. Servo-driven flaps, rudders, and elevators respond in real time to maintain stable flight, demonstrating autonomous stabilization through sensor fusion and control logic.  
+The aircraft employs a 3-axis accelerometer and 3-axis gyroscope module to determine orientation and compute yaw, pitch, and roll. Control surfaces, including flaps, rudders, and elevators, are actuated by servomotors in response to IMU feedback. A stabilization algorithm fuses sensor data and generates corrective control signals, enabling real-time adjustment of the control surfaces to maintain steady flight autonomously.  
 
 ## Parts List
 - **ATmega2560 Arduino Mega Board**  
